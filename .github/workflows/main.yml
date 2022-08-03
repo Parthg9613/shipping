@@ -66,4 +66,7 @@ jobs:
       - name: docker login
         run: | 
           echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "guptaparth" --password-stdin
-
+      - name: search
+        run: pwd
+      - name: list all 
+        run: ls -la 
