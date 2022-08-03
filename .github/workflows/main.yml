@@ -67,6 +67,6 @@ jobs:
         run: | 
           echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "guptaparth" --password-stdin
       - name: search
-        run: cd /home/runner/work/shipping/shipping/target/shipping.jar
+        run: cd /home/runner/work/shipping/shipping/target
       - name: list all 
         run: ls -la 
